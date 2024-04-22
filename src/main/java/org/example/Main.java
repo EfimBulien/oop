@@ -92,7 +92,7 @@ public class Main {
     public static void factoryStatus() {
         int hours = Integer.parseInt(new SimpleDateFormat("HH").format(Calendar.getInstance().getTime()));
 
-        if(hours < 8 || hours > 22) {
+        if (hours < 8 || hours > 22) {
             System.out.println("Завод закрыт! Приходите завтра");
         }
         else {
