@@ -3,6 +3,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Main {
+
     static Scanner scanner = new Scanner(System.in);
 
     public static ArrayList<Hammer> rawHammers = new ArrayList<>();
@@ -39,12 +40,13 @@ public class Main {
             int num = 1;
 
             System.out.println("Выберите действие на заводе:");
-            System.out.println("0. Выйти из программы");
 
             for (String functionName : functionNames) {
                 System.out.println(num + ". " + functionName);
                 num++;
             }
+
+            System.out.println("0. Выйти из программы");
 
             int choice = scanner.nextInt();
 
