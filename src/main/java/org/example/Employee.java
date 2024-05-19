@@ -16,6 +16,3 @@ public class Employee extends Person {
         return name;
     }
 }
-
-
-

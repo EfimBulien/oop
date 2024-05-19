@@ -3,7 +3,11 @@ package org.example;
 public class Person {
     private String name;
 
-    private Person() {
+    private Person(String name) {
+        this.name = name;
+    }
+
+    public Person() {
     }
 
     public String getName() {
@@ -14,7 +18,7 @@ public class Person {
         this.name = name;
     }
 
-    public static Person createPerson() {
-        return new Person();
+    public static Person createPerson(String name) {
+        return new Person(name);
     }
 }
